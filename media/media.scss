@@ -115,7 +115,7 @@ a {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .community-main-info {
     max-width: 450px;
     margin-top: 10px;
@@ -129,7 +129,7 @@ a {
     }
   }
   .header {
-    max-width: 600px;
+    max-width: 640px;
     &__section {
       display: flex;
       align-items: center;
@@ -179,7 +179,7 @@ a {
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 480px) {
   .hero-title {
     font-size: 22px;
   }
@@ -224,5 +224,12 @@ a {
   .code-text {
     text-align: center;
     max-width: 300px;
+  }
+}
+
+@media (max-width: 370px) {
+  .about-image {
+    height: 350px;
+    max-width: 280px;
   }
 }
