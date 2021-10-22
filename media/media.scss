@@ -1,12 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
-
 * {
   margin: 0;
   font-weight: normal;
   text-decoration: none;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  font-family: Roboto;
+  font-family: Georgia, "Times New Roman", Times, serif;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -20,216 +18,169 @@ input {
   border: 0;
   outline: none;
 }
-a {
-  color: #fff;
-}
 
 @mixin slowTrans {
   transition: all 0.3s ease;
 }
 
-@media (max-width: 1200px) {
-  .community-image-item {
-    width: 200px;
-  }
-}
-
-@media (max-width: 1050px) {
-  .about-image {
-    width: 350px;
-  }
-  .code-image {
-    width: 350px;
-  }
-}
-@media (max-width: 920px) {
-  .about {
-    display: flex;
-    justify-content: center;
-    column-gap: 40px;
-  }
-  .community {
-    flex-direction: column;
-    &-main-info {
-      width: 400px;
+@media (max-width: 1199px) {
+  .image-row-block {
+    width: 850px;
+    &-arrow-left {
+      display: none;
     }
-    &-image-item {
-      display: flex;
-      margin-top: 20px;
-      width: 350px;
-    }
-  }
-  .code {
-    display: flex;
-    flex-direction: column;
-    &-main-block {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 30px;
-    }
-  }
-}
-@media (max-width: 800px) {
-  .header {
-    max-width: 800px;
-    &__section {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    &__item {
-      padding: 10px 70px;
-      width: 65px;
-      text-align: center;
-    }
-  }
-  .about {
-    display: flex;
-    flex-direction: column;
-    &-main-block {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 30px;
-    }
-    &-image {
-      height: 450px;
-    }
-  }
-}
-@media (max-width: 730px) {
-  .hero-main-info {
-    text-align: center;
-  }
-  .community-image-item {
-    display: flex;
-    justify-content: center;
-    width: 300px;
-  }
-  .footer-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 60px 60px;
-  }
-}
-
-@media (max-width: 640px) {
-  .community-main-info {
-    max-width: 450px;
-    margin-top: 10px;
-  }
-  .community-image {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-    &-item {
-      max-width: 300px;
-    }
-  }
-  .header {
-    max-width: 640px;
-    &__section {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    &__item {
-      padding: 10px 50px;
-      width: 65px;
-      text-align: center;
-    }
-  }
-  .footer-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 60px 40px;
-  }
-}
-@media (max-width: 500px) {
-  .header {
-    max-width: 500px;
-    height: 156px;
-    &__section {
-      display: flex;
-      flex-flow: column wrap;
-      height: 100%;
-    }
-    &__item {
-      padding: 10px 10px;
-      width: 65px;
-      height: 40%;
-      &_logo {
-        display: none;
-      }
-    }
-  }
-  .footer-info {
-    display: flex;
-    flex-flow: column;
-    padding: 60px 20px;
-    &-last {
-      margin-top: 30px;
-    }
-    &-icon-none {
+    &-three-arrow-right {
       display: none;
     }
   }
+  .item-list-block {
+    width: 850px;
+    &-first {
+      width: 850px;
+    }
+    &-second {
+      padding: 60px;
+      display: flex;
+      justify-content: space-between;
+      width: 850px;
+    }
+  }
 }
 
-@media (max-width: 480px) {
-  .hero-title {
-    font-size: 22px;
-  }
-  .about-title {
-    font-size: 15px;
-    max-width: 300px;
-  }
-  .about-text {
-    max-width: 300px;
-  }
-
-  .email-title {
-    max-width: 300px;
-    text-align: center;
-  }
-  .email-block-form-text {
-    width: 250px;
-  }
-  .email-block-form-icon {
-    position: absolute;
-    left: 275px;
-    top: 40%;
-    transform: translate(0 -40%);
-    margin-right: 621px;
-  }
-  .download-info {
+@media (max-width: 1000px) {
+  .header {
     display: flex;
     flex-direction: column;
-    min-width: 300px;
+    justify-content: start;
+    padding: 0;
+    height: 100px;
+    &-item {
+      padding-top: 50px;
+    }
+    &-section {
+      height: 600px;
+    }
+  }
+  .hero {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+
+    &-dog {
+      display: none;
+    }
+  }
+  .about-main {
+    width: 400px;
     &-text {
-      width: 350px;
+      width: 400px;
+    }
+  }
+  .about-image {
+    padding-right: 20px;
+  }
+  .phone-info-image {
+    width: 380px;
+  }
+  .footer-main-block {
+    &-image {
+      display: none;
+    }
+  }
+  .image-row {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 1700px;
+    &-title {
+      display: flex;
+      align-items: start;
     }
     &-button {
+      margin-top: 800px;
+    }
+  }
+  .image-row-block {
+    display: flex;
+    flex-direction: column;
+    column-gap: 50px;
+    width: 500px;
+  }
+  .item-list {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .phone-info-image {
+    display: none;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+    padding: 0;
+  }
+  .footer {
+    height: 700px;
+    &-main-block {
       display: flex;
       flex-direction: column;
       align-items: center;
+      row-gap: 100px;
     }
-  }
-  .community-main-info-text {
-    max-width: 300px;
-  }
-  .code-text {
-    text-align: center;
-    max-width: 300px;
   }
 }
 
-@media (max-width: 370px) {
-  .about-image {
-    height: 350px;
-    max-width: 280px;
+@media (max-width: 500px) {
+  .header-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+  }
+  .header-section {
+    height: 650px;
+  }
+  .hero {
+    margin-top: 50px;
+  }
+  .about {
+    height: 480px;
+    &-main {
+      display: flex;
+      justify-content: start;
+      flex-direction: column;
+      text-align: center;
+      width: 350px;
+      height: 800px;
+      &-text {
+        width: 350px;
+      }
+    }
+    &-image {
+      display: none;
+    }
+  }
+  .image-row-block {
+    width: 350px;
+  }
+  .phone-info {
+    height: 360px;
+    &-block {
+      display: flex;
+      justify-content: start;
+      flex-direction: column;
+      height: min-content;
+      width: 340px;
+      &-phone {
+        width: 300px;
+        height: 50px;
+        &-text {
+          text-align: center;
+          width: 180px;
+        }
+      }
+    }
   }
 }
