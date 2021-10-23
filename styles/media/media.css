@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
 * {
   margin: 0;
   font-weight: normal;
@@ -21,64 +22,26 @@ input {
   outline: none;
 }
 
-@media (max-width: 1199px) {
-  .image-row-block {
-    width: 850px;
-  }
-  .image-row-block-arrow-left {
-    display: none;
-  }
-  .image-row-block-three-arrow-right {
-    display: none;
+a {
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .community-image-item {
+    width: 200px;
   }
 }
 
-@media (max-width: 1000px) {
-  .header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    padding: 0;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
+@media (max-width: 1050px) {
+  .about-image {
+    width: 350px;
   }
-  .header-item {
-    padding-top: 50px;
+  .code-image {
+    width: 350px;
   }
-  .header-section {
-    padding-top: 30px;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-  }
-  .hero {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    row-gap: 30px;
-    padding-top: 50px;
-  }
-  .hero-dog {
-    width: 300px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
+}
+
+@media (max-width: 920px) {
   .about {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -86,26 +49,35 @@ input {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    row-gap: 30px;
+    -webkit-column-gap: 40px;
+            column-gap: 40px;
   }
-  .about-main {
+  .community {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .community-main-info {
     width: 400px;
   }
-  .about-main-text {
-    width: 400px;
+  .community-image-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
+    width: 350px;
   }
-  .about-image {
-    padding-right: 20px;
+  .code {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .phone-info-image {
-    width: 380px;
-  }
-  .footer {
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-  }
-  .footer-main-block {
+  .code-main-block {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -116,73 +88,29 @@ input {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    row-gap: 100px;
-  }
-  .image-row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    padding-bottom: 50px;
-  }
-  .image-row-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-  }
-  .image-row-button {
-    margin-top: 950px;
-  }
-  .image-row-block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    row-gap: 50px;
-    width: 500px;
-  }
-  .image-row-block-one-info {
-    height: 500px;
-  }
-  .image-row-block-two-info {
-    height: 500px;
-  }
-  .image-row-block-three-info {
-    height: 500px;
+    margin-bottom: 30px;
   }
 }
 
 @media (max-width: 800px) {
-  .phone-info {
+  .header {
+    max-width: 800px;
+  }
+  .header__section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    row-gap: 30px;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    padding-bottom: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .phone-info-image {
-    width: 300px;
+  .header__item {
+    padding: 10px 70px;
+    width: 65px;
+    text-align: center;
   }
   .about {
     display: -webkit-box;
@@ -192,158 +120,201 @@ input {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: -webkit-min-content;
-    height: -moz-min-content;
-    height: min-content;
-    padding: 50px;
   }
-  .image-row-title {
+  .about-main-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+  .about-image {
+    height: 450px;
+  }
+}
+
+@media (max-width: 730px) {
+  .hero-main-info {
     text-align: center;
+  }
+  .community-image-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 300px;
+  }
+  .footer-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 60px 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .community-main-info {
+    max-width: 450px;
+    margin-top: 10px;
+  }
+  .community-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .community-image-item {
+    max-width: 300px;
+  }
+  .header {
+    max-width: 600px;
+  }
+  .header__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header__item {
+    padding: 10px 50px;
+    width: 65px;
+    text-align: center;
+  }
+  .footer-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 60px 40px;
   }
 }
 
 @media (max-width: 500px) {
-  .header-item {
+  .header {
+    max-width: 500px;
+    height: 156px;
+  }
+  .header__section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    row-gap: 20px;
-    width: 300px;
-  }
-  .header-section {
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-  }
-  .hero-dog {
-    width: 225px;
-  }
-  .about {
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-  }
-  .about-main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    width: 350px;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    height: 100%;
   }
-  .about-main-text {
-    width: 350px;
+  .header__item {
+    padding: 10px 10px;
+    width: 65px;
+    height: 40%;
   }
-  .about-image {
-    width: 200px;
+  .header__item_logo {
+    display: none;
   }
-  .image-row-block {
-    width: 350px;
-  }
-  .image-row-title {
-    text-align: center;
-    font-size: 25px;
-    max-width: 300px;
-  }
-  .phone-info {
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-  }
-  .phone-info-block {
+  .footer-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: -webkit-min-content;
-    height: -moz-min-content;
-    height: min-content;
-    width: 340px;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    padding: 60px 20px;
   }
-  .phone-info-block-phone {
-    max-width: 400px;
-    height: 50px;
+  .footer-info-last {
+    margin-top: 30px;
   }
-  .phone-info-block-phone-text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .footer-info-icon-none {
+    display: none;
   }
 }
 
-@media (max-width: 400px) {
-  .header-section {
-    height: 879px;
+@media (max-width: 430px) {
+  .hero-title {
+    font-size: 22px;
   }
-  .hero {
-    padding: 0;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-top: 30px;
+  .about-title {
+    font-size: 15px;
+    max-width: 300px;
   }
-  .hero-container {
+  .about-text {
+    max-width: 300px;
+  }
+  .email-title {
+    max-width: 300px;
+    text-align: center;
+  }
+  .email-block-form-text {
+    width: 250px;
+  }
+  .email-block-form-icon {
+    position: absolute;
+    left: 275px;
+    top: 40%;
+    -webkit-transform: translate(0 -40%);
+            transform: translate(0 -40%);
+    margin-right: 621px;
+  }
+  .download-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 310px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: 300px;
   }
-  .phone-info-block {
-    max-width: 310px;
-    margin: 0;
+  .download-info-text {
+    width: 350px;
   }
-  .phone-info-block-subtitle {
-    max-width: 310px;
+  .download-info-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .phone-info-block-phone {
+  .community-main-info-text {
     max-width: 300px;
   }
-  .phone-info-block-phone-text {
-    font-size: 18px;
-  }
-  .phone-info-block-desc {
+  .code-text {
+    text-align: center;
     max-width: 300px;
-  }
-  .image-row-block {
-    max-width: 300px;
-  }
-  .about {
-    padding: 50px 0 50px 0;
-  }
-  .about-main {
-    max-width: 310px;
-  }
-  .about-main-text {
-    max-width: 310px;
   }
 }
 /*# sourceMappingURL=media.css.map */

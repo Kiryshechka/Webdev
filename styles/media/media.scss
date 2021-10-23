@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
 * {
   margin: 0;
   font-weight: normal;
@@ -18,236 +20,209 @@ input {
   border: 0;
   outline: none;
 }
+a {
+  color: #fff;
+}
 
 @mixin slowTrans {
   transition: all 0.3s ease;
 }
 
-@media (max-width: 1199px) {
-  .image-row-block {
-    width: 850px;
-    &-arrow-left {
-      display: none;
-    }
-    &-three-arrow-right {
-      display: none;
-    }
+@media (max-width: 1200px) {
+  .community-image-item {
+    width: 200px;
   }
 }
 
-@media (max-width: 1000px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    padding: 0;
-    height: max-content;
-    &-item {
-      padding-top: 50px;
-    }
-    &-section {
-      padding-top: 30px;
-      height: max-content;
-    }
+@media (max-width: 1050px) {
+  .about-image {
+    width: 350px;
   }
-  .hero {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    row-gap: 30px;
-    padding-top: 50px;
-
-    &-dog {
-      width: 300px;
-      align-self: center;
-    }
+  .code-image {
+    width: 350px;
   }
+}
+@media (max-width: 920px) {
   .about {
     display: flex;
     justify-content: center;
-    row-gap: 30px;
-    &-main {
+    column-gap: 40px;
+  }
+  .community {
+    flex-direction: column;
+    &-main-info {
       width: 400px;
-      &-text {
-        width: 400px;
-      }
     }
-    &-image {
-      padding-right: 20px;
+    &-image-item {
+      display: flex;
+      margin-top: 20px;
+      width: 350px;
     }
   }
-  .phone-info-image {
-    width: 380px;
-  }
-  .footer {
-    height: max-content;
+  .code {
+    display: flex;
+    flex-direction: column;
     &-main-block {
       display: flex;
       flex-direction: column;
       align-items: center;
-      row-gap: 100px;
+      margin-bottom: 30px;
     }
-  }
-  .image-row {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    height: max-content;
-    padding-bottom: 50px;
-    &-title {
-      display: flex;
-      align-items: start;
-    }
-    &-button {
-      margin-top: 950px;
-    }
-  }
-  .image-row-block {
-    display: flex;
-    flex-direction: column;
-    row-gap: 50px;
-    width: 500px;
-    &-one-info {
-      height: 500px;
-    }
-    &-two-info {
-      height: 500px;
-    }
-    &-three-info {
-      height: 500px;
-    }
-  }
-  .item-list {
   }
 }
-
 @media (max-width: 800px) {
-  .phone-info {
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    height: max-content;
-    padding-bottom: 50px;
-    &-image {
-      width: 300px;
+  .header {
+    max-width: 800px;
+    &__section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__item {
+      padding: 10px 70px;
+      width: 65px;
+      text-align: center;
     }
   }
   .about {
     display: flex;
     flex-direction: column;
-    height: min-content;
-    padding: 50px;
-  }
-  .image-row-title {
-    text-align: center;
+    &-main-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    &-image {
+      height: 450px;
+    }
   }
 }
-
-@media (max-width: 500px) {
-  .header-item {
+@media (max-width: 730px) {
+  .hero-main-info {
+    text-align: center;
+  }
+  .community-image-item {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    row-gap: 20px;
     width: 300px;
   }
-  .header-section {
-    height: max-content;
+  .footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 60px;
   }
-  .hero {
-    &-dog {
-      width: 225px;
+}
+
+@media (max-width: 600px) {
+  .community-main-info {
+    max-width: 450px;
+    margin-top: 10px;
+  }
+  .community-image {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    &-item {
+      max-width: 300px;
     }
   }
-  .about {
-    height: max-content;
-    &-main {
+  .header {
+    max-width: 600px;
+    &__section {
       display: flex;
-      justify-content: start;
-      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &__item {
+      padding: 10px 50px;
+      width: 65px;
       text-align: center;
-      width: 350px;
-      height: max-content;
-      &-text {
-        width: 350px;
-      }
-    }
-    &-image {
-      width: 200px;
     }
   }
-
-  .image-row-block {
-    width: 350px;
+  .footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
   }
-
-  .image-row-title {
-    text-align: center;
-    font-size: 25px;
-    max-width: 300px;
-  }
-
-  .phone-info {
-    height: max-content;
-    &-block {
+}
+@media (max-width: 500px) {
+  .header {
+    max-width: 500px;
+    height: 156px;
+    &__section {
       display: flex;
-      justify-content: start;
-      flex-direction: column;
-      height: min-content;
-      width: 340px;
-      &-phone {
-        max-width: 400px;
-        height: 50px;
-        &-text {
-          display: flex;
-          justify-content: center;
-        }
+      flex-flow: column wrap;
+      height: 100%;
+    }
+    &__item {
+      padding: 10px 10px;
+      width: 65px;
+      height: 40%;
+      &_logo {
+        display: none;
       }
+    }
+  }
+  .footer-info {
+    display: flex;
+    flex-flow: column;
+    padding: 60px 20px;
+    &-last {
+      margin-top: 30px;
+    }
+    &-icon-none {
+      display: none;
     }
   }
 }
 
-@media (max-width: 400px) {
-  .header-section {
-    height: 879px;
+@media (max-width: 430px) {
+  .hero-title {
+    font-size: 22px;
   }
-  .hero {
-    padding: 0;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 30px;
+  .about-title {
+    font-size: 15px;
+    max-width: 300px;
   }
-  .hero-container {
+  .about-text {
+    max-width: 300px;
+  }
+
+  .email-title {
+    max-width: 300px;
+    text-align: center;
+  }
+  .email-block-form-text {
+    width: 250px;
+  }
+  .email-block-form-icon {
+    position: absolute;
+    left: 275px;
+    top: 40%;
+    transform: translate(0 -40%);
+    margin-right: 621px;
+  }
+  .download-info {
     display: flex;
-    justify-content: center;
-    width: 310px;
-  }
-  .phone-info-block {
-    max-width: 310px;
-    margin: 0;
-    &-subtitle {
-      max-width: 310px;
-    }
-  }
-  .phone-info-block-phone {
-    max-width: 300px;
+    flex-direction: column;
+    min-width: 300px;
     &-text {
-      font-size: 18px;
+      width: 350px;
+    }
+    &-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
-  .phone-info-block-desc {
+  .community-main-info-text {
     max-width: 300px;
   }
-  .image-row-block {
+  .code-text {
+    text-align: center;
     max-width: 300px;
-  }
-  .about {
-    padding: 50px 0 50px 0;
-    &-main {
-      max-width: 310px;
-      &-text {
-        max-width: 310px;
-      }
-    }
   }
 }
