@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="./media/media.css" rel="stylesheet" type="text/css" />
+    <link href="./styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="./styles/media/media.css" rel="stylesheet" type="text/css" />
     <title>Document</title>
   </head>
   <body>
@@ -30,14 +30,19 @@
             extremely wide and open heart. He or she will love you more than
             anybody else in the world, you will see!
           </p>
-          <button class="hero-container-button button">Make a friend</button>
+          <button
+            onclick="alert('Какой нахуй мейк э фриенд долбоеб, js нету иди нахуй')"
+            class="hero-container-button button"
+          >
+            Make a friend
+          </button>
         </div>
-        <img class="hero-dog" src="img/start-screen-puppy.png" alt="" />
+        <img class="hero-dog" src="./img/start-screen-puppy.png" alt="" />
       </section>
     </section>
     <section class="about">
       <div class="about-image">
-        <img src="img/about-pets.png" alt="" class="about-image" />
+        <img src="./img/about-pets.png" alt="" class="about-image" />
       </div>
       <div class="about-main">
         <h1 class="about-main-title">About the shelter “Cozy House”</h1>
@@ -63,7 +68,7 @@
         <div class="image-row-block-arrow-left">
           <img
             class="image-row-block-arrow-left"
-            src="img/button_arrow.png"
+            src="./img/button_arrow.png"
             alt=""
           />
         </div>
@@ -71,7 +76,7 @@
           <div class="image-row-block-one-info">
             <img
               class="image-row-block-one-image"
-              src="img/pets-katrine.png"
+              src="./img/pets-katrine.png"
               alt=""
             />
             <h1 class="image-row-block-one-info-title">Katrine</h1>
@@ -82,7 +87,7 @@
           <div class="image-row-block-two-info">
             <img
               class="image-row-block-two-image"
-              src="img/pets-jennifer.png"
+              src="./img/pets-jennifer.png"
               alt=""
             />
             <h1 class="image-row-block-two-info-title">Jennifer</h1>
@@ -93,7 +98,7 @@
           <div class="image-row-block-three-info">
             <img
               class="image-row-block-three-image"
-              src="img/pets-woody.png"
+              src="./img/pets-woody.png"
               alt=""
             />
             <h1 class="image-row-block-three-info-title">Woody</h1>
@@ -105,7 +110,7 @@
         <div class="image-row-block-three-arrow-right">
           <img
             class="image-row-block-three-arrow-right"
-            src="img/button_arrow (1).png"
+            src="./img/button_arrow (1).png"
             alt=""
           />
         </div>
@@ -113,55 +118,49 @@
       <button class="image-row-button">Get to know the rest</button>
     </section>
     <section class="item-list">
+      <h1 class="item-list-title">How you can help our shelter</h1>
       <div class="item-list-block">
-        <div class="item-list-block-title">
-          <h1 class="item-list-title">How you can help our shelter</h1>
+        <div class="item-list-block-container">
+          <img src="./img/Vector.png" alt="" />
+          <p class="item-list-block-text">Pet food</p>
         </div>
-        <div class="item-list-block-first">
-          <div class="item-list-block-food">
-            <img class="item-list-block-food" src="/img/Vector.png" alt="" />
-            <p class="item-list-block-food">Pet food</p>
-          </div>
-          <div class="item-list-block-transporation">
-            <img src="/img/transportation.png" alt="" />
-            <p class="item-list-block-transporation-text">Transportation</p>
-          </div>
-          <div class="item-list-block-toys">
-            <img src="/img/toys.png" alt="" />
-            <p class="item-list-block-toys-text">Toys</p>
-          </div>
-          <div class="item-list-block-cups">
-            <img src="/img/bowls-and-cups.png" alt="" />
-            <p class="item-list-block-cups-text">Bowls and cups</p>
-          </div>
-          <div class="item-list-block-shampoos">
-            <img src="/img/shampoos.png" alt="" />
-            <p class="item-list-block-shampoos-text">Shampoos</p>
-          </div>
+        <div class="item-list-block-container">
+          <img src="./img/transportation.png" alt="" />
+          <p class="item-list-block-text">Transportation</p>
         </div>
-        <div class="item-list-block-second">
-          <div class="item-list-block-vitamins">
-            <img src="/img/vitamins.png" alt="" />
-            <p class="item-list-block-vitamins-text">Vitamins</p>
-          </div>
-          <div class="item-list-block-medicines">
-            <img src="/img/medicines.png" alt="" />
-            <p class="item-list-block-medicines-text">Medicines</p>
-          </div>
-          <div class="item-list-block-collars">
-            <img src="/img/collars-or-leashes.png" alt="" />
-            <p class="item-list-block-collars-text">Collars / leashes</p>
-          </div>
-          <div class="item-list-block-areas">
-            <img src="/img/sleeping-area.png" alt="" />
-            <p class="item-list-block-areas-text">Sleeping areas</p>
-          </div>
+        <div class="item-list-block-container">
+          <img src="./img/toys.png" alt="" />
+          <p class="item-list-block-text">Toys</p>
+        </div>
+        <div class="item-list-block-container">
+          <img src="./img/bowls-and-cups.png" alt="" />
+          <p class="item-list-block-text">Bowls and cups</p>
+        </div>
+        <div class="item-list-block-container">
+          <img src="./img/shampoos.png" alt="" />
+          <p class="item-list-block-text">Shampoos</p>
+        </div>
+        <div class="item-list-block-container">
+          <img src="./img/vitamins.png" alt="" />
+          <p class="item-list-block-text">Vitamins</p>
+        </div>
+        <div class="item-list-block-container">
+          <img src="./img/medicines.png" alt="" />
+          <p class="item-list-block-text">Medicines</p>
+        </div>
+        <div class="item-list-block-container">
+          <img src="./img/collars-or-leashes.png" alt="" />
+          <p class="item-list-block-text">Collars / leashes</p>
+        </div>
+        <div class="item-list-block-container">
+          <img src="./img/sleeping-area.png" alt="" />
+          <p class="item-list-block-text">Sleeping areas</p>
         </div>
       </div>
     </section>
     <section class="phone-info">
       <div class="phone-info-image">
-        <img class="phone-info-image" src="/img/donation-dog.png" alt="" />
+        <img class="phone-info-image" src="./img/donation-dog.png" alt="" />
       </div>
       <div class="phone-info-block">
         <h1 class="phone-info-block-title">You can also make a donation</h1>
@@ -169,7 +168,7 @@
           Name of the bank / Type of bank account
         </p>
         <div class="phone-info-block-phone">
-          <img src="/img/credit-card.svg" alt="" />
+          <img src="./img/credit-card.svg" alt="" />
           <p class="phone-info-block-phone-text">8380 2880 8028 8791 7435</p>
         </div>
         <p class="phone-info-block-desc">
@@ -185,29 +184,29 @@
         <div class="footer-first">
           <h1 class="footer-first-title">For questions and suggestions</h1>
           <div class="footer-first-email">
-            <img src="/img/mail.png" alt="" />
+            <img src="./img/mail.png" alt="" />
             <p class="footer-first-email-text">email@shelter.com</p>
           </div>
           <div class="footer-first-phone">
-            <img src="/img/phone.png" alt="" />
+            <img src="./img/phone.png" alt="" />
             <p class="footer-first-phone-text">+13 674 567 75 54</p>
           </div>
         </div>
         <div class="footer-second">
           <h1 class="footer-second-title">We are waiting for your visit</h1>
           <div class="footer-second-city">
-            <img class="footer-second-city-icon" src="/img/pin.png" alt="" />
+            <img class="footer-second-city-icon" src="./img/pin.png" alt="" />
             <p class="footer-second-city-text">
               1 Central Street, Boston (entrance from the store)
             </p>
           </div>
           <div class="footer-second-geo">
-            <img src="/img/pin.png" alt="" />
+            <img src="./img/pin.png" alt="" />
             <p class="footer-second-geo-text">18 South Park, London</p>
           </div>
         </div>
         <div class="footer-main-block-image">
-          <img src=".img/footer-puppy.png" alt="" />
+          <img src="./img/footer-puppy.png" alt="" />
         </div>
       </div>
     </footer>

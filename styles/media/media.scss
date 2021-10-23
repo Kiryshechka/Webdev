@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  font-weight: normal;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  background: none;
+  outline: none;
+}
+input {
+  border: 0;
+  outline: none;
+}
+
+@mixin slowTrans {
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 1199px) {
+  .image-row-block {
+    width: 850px;
+    &-arrow-left {
+      display: none;
+    }
+    &-three-arrow-right {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 0;
+    height: max-content;
+    &-item {
+      padding-top: 50px;
+    }
+    &-section {
+      padding-top: 30px;
+      height: max-content;
+    }
+  }
+  .hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-top: 50px;
+
+    &-dog {
+      width: 300px;
+      align-self: center;
+    }
+  }
+  .about {
+    display: flex;
+    justify-content: center;
+    row-gap: 30px;
+    &-main {
+      width: 400px;
+      &-text {
+        width: 400px;
+      }
+    }
+    &-image {
+      padding-right: 20px;
+    }
+  }
+  .phone-info-image {
+    width: 380px;
+  }
+  .footer {
+    height: max-content;
+    &-main-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 100px;
+    }
+  }
+  .image-row {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: max-content;
+    padding-bottom: 50px;
+    &-title {
+      display: flex;
+      align-items: start;
+    }
+    &-button {
+      margin-top: 950px;
+    }
+  }
+  .image-row-block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    width: 500px;
+    &-one-info {
+      height: 500px;
+    }
+    &-two-info {
+      height: 500px;
+    }
+    &-three-info {
+      height: 500px;
+    }
+  }
+  .item-list {
+  }
+}
+
+@media (max-width: 800px) {
+  .phone-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    height: max-content;
+    padding-bottom: 50px;
+    &-image {
+      width: 300px;
+    }
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+    padding: 50px;
+  }
+  .image-row-title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+    width: 300px;
+  }
+  .header-section {
+    height: max-content;
+  }
+  .hero {
+    &-dog {
+      width: 225px;
+    }
+  }
+  .about {
+    height: max-content;
+    &-main {
+      display: flex;
+      justify-content: start;
+      flex-direction: column;
+      text-align: center;
+      width: 350px;
+      height: max-content;
+      &-text {
+        width: 350px;
+      }
+    }
+    &-image {
+      width: 200px;
+    }
+  }
+
+  .image-row-block {
+    width: 350px;
+  }
+
+  .image-row-title {
+    text-align: center;
+    font-size: 25px;
+    max-width: 300px;
+  }
+
+  .phone-info {
+    height: max-content;
+    &-block {
+      display: flex;
+      justify-content: start;
+      flex-direction: column;
+      height: min-content;
+      width: 340px;
+      &-phone {
+        max-width: 400px;
+        height: 50px;
+        &-text {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .header-section {
+    height: 879px;
+  }
+  .hero {
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  .hero-container {
+    display: flex;
+    justify-content: center;
+    width: 310px;
+  }
+  .phone-info-block {
+    max-width: 310px;
+    margin: 0;
+    &-subtitle {
+      max-width: 310px;
+    }
+  }
+  .phone-info-block-phone {
+    max-width: 300px;
+    &-text {
+      font-size: 18px;
+    }
+  }
+  .phone-info-block-desc {
+    max-width: 300px;
+  }
+  .image-row-block {
+    max-width: 300px;
+  }
+  .about {
+    padding: 50px 0 50px 0;
+    &-main {
+      max-width: 310px;
+      &-text {
+        max-width: 310px;
+      }
+    }
+  }
+}

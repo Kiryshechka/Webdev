@@ -48,7 +48,7 @@ input {
 }
 
 .header-section {
-  background-image: url(img/start-screen-gradient-background.png);
+  background-image: url(../img/start-screen-gradient-background.png);
   background-position: center;
   background-size: cover;
   display: -webkit-box;
@@ -181,7 +181,6 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 215px;
   height: 588px;
 }
 
@@ -404,173 +403,78 @@ input {
 }
 
 .item-list {
+  padding: 80px 20px 100px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 611px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 60px;
+}
+
+.item-list-title {
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  max-width: 308px;
+  text-align: center;
 }
 
 .item-list-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1050px;
+  -webkit-column-gap: 120px;
+          column-gap: 120px;
+  row-gap: 55px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.item-list-block-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  row-gap: 30px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 80px;
-  width: 1200px;
-  height: 431px;
-  background-color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.item-list-block-title {
-  font-size: 23.5px;
-  line-height: 130%;
-  color: #545454;
-  letter-spacing: 0.06em;
-  width: 308px;
-  text-align: center;
-}
-
-.item-list-block-first {
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
-  padding-top: 60px;
-  padding-left: 87px;
-  padding-right: 87px;
+.item-list-block-text {
+  font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.item-list-block-second {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: wrap nowrap;
-      flex-flow: wrap nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-left: 185px;
-  padding-right: 213px;
-  width: 1150px;
-}
-
-.item-list-block-food {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  padding-bottom: 30px;
-  font-size: 20px;
-  line-height: 115%;
-  color: #545454;
   letter-spacing: 0.06em;
-}
-
-.item-list-block-transporation {
-  text-align: center;
-}
-
-.item-list-block-transporation-text {
-  padding-top: 30px;
-  font-size: 20px;
-  line-height: 115%;
   color: #545454;
-  letter-spacing: 0.06em;
-}
-
-.item-list-block-toys {
-  text-align: center;
-}
-
-.item-list-block-toys-text {
-  padding-top: 30px;
-  font-size: 20px;
-  line-height: 115%;
-  color: #545454;
-  letter-spacing: 0.06em;
-}
-
-.item-list-block-cups {
-  text-align: center;
-}
-
-.item-list-block-cups-text {
-  padding-top: 30px;
-  font-size: 20px;
-  line-height: 115%;
-  color: #545454;
-  letter-spacing: 0.06em;
-}
-
-.item-list-block-shampoos {
-  text-align: center;
-}
-
-.item-list-block-shampoos-text {
-  padding-top: 30px;
-  font-size: 20px;
-  line-height: 115%;
-  color: #545454;
-  letter-spacing: 0.06em;
-}
-
-.item-list-block-vitamins {
-  text-align: center;
-}
-
-.item-list-block-vitamins-text {
-  padding-top: 30px;
-  font-size: 20px;
-  line-height: 115%;
-  color: #545454;
-  letter-spacing: 0.06em;
-}
-
-.item-list-block-medicines {
-  text-align: center;
-}
-
-.item-list-block-medicines-text {
-  padding-top: 30px;
-  font-size: 20px;
-  line-height: 115%;
-  color: #545454;
-  letter-spacing: 0.06em;
-}
-
-.item-list-block-collars {
-  text-align: center;
-}
-
-.item-list-block-collars-text {
-  padding-top: 30px;
-  font-size: 20px;
-  line-height: 115%;
-  color: #545454;
-  letter-spacing: 0.06em;
-}
-
-.item-list-block-areas {
-  text-align: center;
-}
-
-.item-list-block-areas-text {
-  padding-top: 30px;
-  font-size: 20px;
-  line-height: 115%;
-  color: #545454;
-  letter-spacing: 0.06em;
 }
 
 .phone-info {
@@ -642,7 +546,7 @@ input {
 }
 
 .footer {
-  background-image: url(img/footer-gradient-background.png);
+  background-image: url(../img/footer-gradient-background.png);
   background-position: center;
   background-size: cover;
   height: 350px;
